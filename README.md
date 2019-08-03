@@ -1,4 +1,4 @@
-# Jonathan’s Notes - DevelopMe_ Coding Fellowship
+# Jonathan’s Notes - DevelopMe Coding Fellowship
 
 ## Git and GitHub
 
