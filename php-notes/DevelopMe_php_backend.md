@@ -22,21 +22,21 @@
 
 ## On to PHP
 
-### Overview
+### Overview
 
 Introduction to backend development, PHP basics.
 
-### Work method
+### Work method
 
 Individually, on local machine
 
 ### New Tools
 
-LAMP, Vagrant, MySQL
+LAMP, Vagrant, MySQL
 
-### Project
+### Project
 
-1.  Build a calculator
+1.  Build a calculator
 2.  Build a simple application with registration, email verification and login functionality.
 
 ### Module Outline
@@ -150,10 +150,10 @@ We'll build and run a virtual LAMP computer with Vagrant.
 
 ### Getting setup with Vagrant
 
-Check all is installed with:
+Check all is installed with:
 
 ```bash
-$ vagrant -v
+$ vagrant -v
 ```
 
 The result should be:
@@ -183,7 +183,7 @@ Vagrant 2.1.2
 
 #### Turn on your machine (box)
 
-'Spin up' (turn on) your box with:
+'Spin up' (turn on) your box with:
 
 ```bash
 $ vagrant up
@@ -191,7 +191,7 @@ $ vagrant up
 
 #### Test your box is working
 
-1.  Visit <http://scotchbox> or on Windows <http://192.168.33.10/>
+1.  Visit <http://scotchbox> or on Windows <http://192.168.33.10/>
 2.  Verify "Welcome to Scotch Box"
 
 ![](images/scotchbox.png)
@@ -207,12 +207,12 @@ $ sudo nano /etc/hosts
 2.  Add a new entry that resolves to the new box's IP address, e.g.
 
 ```bash
-192.168.33.10		oli.ward
+192.168.33.10		oli.ward
 ```
 
-3.  Save and exit nano with `Ctrl+X`then type `Y` and hit `Enter`
+3.  Save and exit nano with `Ctrl+X` then type `Y` and hit `Enter`
 
-4.  Visit your new domain in your browser, e.g.<http://oli.ward/>
+4.  Visit your new domain in your browser, e.g. <http://oli.ward/>
 
 ### Vagrantfile
 
@@ -423,31 +423,31 @@ The server may not pass errors to the user, so you'll need to access the server 
 
 ### Error file on Scotch Box
 
-1.  SSH into your box:
+1.  SSH into your box:
 
     ```bash
     $ vagrant ssh
     ```
 
-2.  Elevate to super-user (all the permissions)
+2.  Elevate to super-user (all the permissions)
 
     ```bash
     $ sudo su -
     ```
 
-3.  View the end (tail) of the error log file:
+3.  View the end (tail) of the error log file:
 
     ```bash
     $ tail /var/log/apache2/error.log
     ```
 
-4.  To get out of superuser (back to vagrant user)
+4.  To get out of superuser (back to vagrant user)
 
     ```bash
     $ exit
     ```
 
-5.  To get out of vagrant user (back to host machine)
+5.  To get out of vagrant user (back to host machine)
 
     ```bash
     $ exit
@@ -512,7 +512,7 @@ if (false) {
 ### What month is it?
 
 1.  Set the numeric month of the year in a variable
-2.  Write conditional statements (if, elseif, else) to test the month variable and give a different output for each month, e.g. `echo "It's October";`
+2.  Write conditional statements (if, elseif, else) to test the month variable and give a different output for each month, e.g. `echo "It's October";`
 
 * * *
 
@@ -748,9 +748,9 @@ raspberrys are red<br />
 ### Where do we live?
 
 1.  Create an associative array of people and places
-2.  Loop through the array to output in format:  
+2.  Loop through the array to output in format:  
     "Oli lives in Bedminster"  
-    "Tom lives in Clifton"  
+    "Tom lives in Clifton"  
     ...
 
 * * *
@@ -918,16 +918,16 @@ default:
 
 ### Sunrise and sunset
 
-Create a for loop that goes through the hours of the day, starting at 0:00. Write a switch statement to print whether it is light or not.
+Create a for loop that goes through the hours of the day, starting at 0:00. Write a switch statement to print whether it is light or not.
 
 For example:
 
-    "0:00 is dark"  
+    "0:00 is dark"  
     ...  
 
-"8:00 is light"  
-...  
-"23:00 is dark"  
+"8:00 is light"  
+...  
+"23:00 is dark"  
 
 #### Advanced: how short can you make it
 
@@ -990,7 +990,7 @@ Oli Ward <mailto:oli@developme.training>
 
 2.  Format and return in form '@oliward' (lowercase)
 
-Hint: see PHP's built-in `strtolower()` function and `str_replace()`
+Hint: see PHP's built-in `strtolower()` function and `str_replace()`
 
 ### Formatting Twitter handle (Advanced)
 
@@ -998,7 +998,7 @@ Also account for user inputting:
 
 <https://twitter.com/oliward>
 
-<http://twitter.com/@oliward>
+<http://twitter.com/@oliward>
 
 <https://twitter.com/oliward#home>
 
@@ -1010,17 +1010,17 @@ Also account for user inputting:
 
     1.  Create a function that takes CC numbers in any form, e.g.:
 
-        41112222333344445
+        41112222333344445
 
-        4111 2222 3333 4444
+        4111 2222 3333 4444
 
-        4111x2222x3333x4444
+        4111x2222x3333x4444
 
         4111-2222-3333-4444
 
         4111-2222-3333-4444-5555
 
-    2.  Format and return in form '4111-2222-3333-4444'
+    2.  Format and return in form '4111-2222-3333-4444'
 
         Hint: see PHP's built-in substr() function
 
@@ -1047,9 +1047,9 @@ Also account for user inputting:
 ### Defines what page will load when form is submitted
 
 ```html
-<form action="form-handler.php">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+<form action="form-handler.php">
+	<input type="text" name="email" />
+	<input type="submit" value="Send" />
 </form>
 ```
 
@@ -1083,9 +1083,9 @@ Two most common methods for a request-response between a client and server are:
 ### HTML form with 'POST' method
 
 ```html
-<form action="form-handler.php" method="post">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+<form action="form-handler.php" method="post">
+	<input type="text" name="email" />
+	<input type="submit" value="Send" />
 </form>
 ```
 
@@ -1112,9 +1112,9 @@ echo $_POST['email'];
 ### HTML form with 'GET' method
 
 ```html
-<form action="form-handler.php" method="get">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+<form action="form-handler.php" method="get">
+	<input type="text" name="email" />
+	<input type="submit" value="Send" />
 </form>
 ```
 
@@ -1173,8 +1173,8 @@ echo $_POST['email'];
 
 1.  Build the form. Think about:
 
-    -   **action**
-    -   **method**
+    -   **action**
+    -   **method**
     -   input **names**
 
 2.  Check you can submit the form and output the values (just echo them out)
@@ -1232,13 +1232,13 @@ You will need to:
 
 #### MySQL on your vagrant box
 
-1.  SSH into your virtual server:
+1.  SSH into your virtual server:
 
     ```bash
     $ vagrant ssh
     ```
 
-2.  Access MySQL with the root user account
+2.  Access MySQL with the root user account
 
     ```bash
     $ mysql -u root -p
@@ -1246,7 +1246,7 @@ You will need to:
 
 3.  Password is `root`
 
-    Or, you can type:
+    Or, you can type:
 
     ```bash
     $ mysql -u root -proot
@@ -1365,7 +1365,7 @@ You will need to:
 
 3.  Copy and paste SQL into MySQL prompt
 4.  Hit 'Enter'
-5.  Verify tables with:
+5.  Verify tables with:
 
         mysql> SHOW TABLES;
 
@@ -1386,7 +1386,7 @@ Example: ``SELECT * FROM `table name`;``
 
 #### Fetch just the name field using a SELECT query
 
-Example: ``SELECT `field name` FROM `table name`;``
+Example: ``SELECT `field name` FROM `table name`;``
 
     +----+--------------+----------------+-----+
     | id | fullname     | location       | age |
@@ -1401,7 +1401,7 @@ Example: ``SELECT `field name` FROM `table name`;``
 
 #### Update Josh's age with UPDATE SQL query
 
-Example: ``UPDATE `table name` SET `field name` = 'value'`` <span style="color: #ABABAB">``(WHERE `field name` = 'value');``</span>
+Example: ``UPDATE `table name` SET `field name` = 'value'`` <span style="color: #ABABAB">``(WHERE `field name` = 'value');``</span>
 
     +----+--------------+----------------+-----+
     | id | fullname     | location       | age |
@@ -1416,7 +1416,7 @@ Example: ``UPDATE `table name` SET `field name` = 'value'`` <span style="color:
 
 #### Add more data for Pete using INSERT query
 
-Example:``INSERT INTO `table name` (`field name`, `field name`, `field name`) VALUES ('value', 'value', 'value');``
+Example: ``INSERT INTO `table name` (`field name`, `field name`, `field name`) VALUES ('value', 'value', 'value');``
 
     +----+--------------+----------------+-----+
     | id | fullname     | location       | age |
@@ -1559,7 +1559,7 @@ if ($db_connection->connect_error) {
 ```php //
 <?php
 $clean_email = mysqli_real_escape_string($db_connection, $email);
-$clean_password = mysqli_real_escape_string($db_connection, $password);
+$clean_password = mysqli_real_escape_string($db_connection, $password);
 
 $clean_activation_code = mysqli_real_escape_string($db_connection, $activation_code);
 ```
@@ -1730,10 +1730,10 @@ So, if we have this stored in database:
 ```php //
 <?php
 $password = $\_POST['password']; // = wrongpassword
-if (password_verify($password, $row['password'])){ // false
+if (password_verify($password, $row['password'])){ // false
 
 $password = $\_POST['password']; // = letmein
-if (password_verify($password, $row['password'])){ // true
+if (password_verify($password, $row['password'])){ // true
 ```
 
 * * *
@@ -1809,7 +1809,7 @@ data destroyed when browser is closed
 
 #### Cookies
 
-data saved until deleted by user, or they expire
+data saved until deleted by user, or they expire
 
 ### To use sessions you need to start sessions
 
@@ -1917,7 +1917,7 @@ echo md5('It was the best of times, it was the worst of times, it was the age of
 $password = 'letmein';
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 // $2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK
-INSERT INTO users (email, password) VALUES ('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
+INSERT INTO users (email, password) VALUES ('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
 ```
 
 ### Checking passwords
@@ -1933,10 +1933,10 @@ So, if we have this stored in database:
 ```php //
 <?php
 $password = $\_POST['password']; // = wrongpassword
-if (password_verify($password, $row['password'])){ // false
+if (password_verify($password, $row['password'])){ // false
 
 $password = $\_POST['password']; // = letmein
-if (password_verify($password, $row['password'])){ // true
+if (password_verify($password, $row['password'])){ // true
 ```
 
 ### Why is that useful? What if we get hacked?
