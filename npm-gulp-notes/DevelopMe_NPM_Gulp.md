@@ -157,9 +157,9 @@ This command does git init and checks out master into new folder called gulp-tes
 
 1.  A Bootstrap v4 site
 2.  Uses Sass, compiles scss/styles.scss to css/styles.css, from many Sass files
-3.  Uses some JavaScript files:
-    -   js/jquery-3.2.1.slim.js
-    -   js/popper.js
+3.  Uses some JavaScript files:
+    -   js/jquery-3.2.1.slim.js
+    -   js/popper.js
     -   js/bootstrap.js
 
 ### What do we want to do to improve it?
@@ -177,11 +177,11 @@ We want to automate:
 
 To automate these tasks we will:
 
-1.  Install the packages we need with npm
-2.  Create some tasks with gulp (in gulpfile.js)
+1.  Install the packages we need with npm
+2.  Create some tasks with gulp (in gulpfile.js)
 3.  Run the tasks to do the work
 
-#### Start with npm, install gulp
+#### Start with npm, install gulp
 
 Create **package.json**
 
@@ -455,7 +455,7 @@ First, plan your website's purpose in your team.
 #### Then, other people in the team can:
 
 1.  Checkout the GitHub repository
-2.  Install dependencies from package.json with:
+2.  Install dependencies from package.json with:
 
 ```bash
 $ npm install
