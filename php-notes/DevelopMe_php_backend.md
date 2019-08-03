@@ -1704,10 +1704,7 @@ if (mysqli_num_rows($result) > 0){
 $password = 'letmein';
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 // $2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK
-INSERT INTO users
-				(email, password)
-			VALUES
-				('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
+INSERT INTO users (email, password) VALUES ('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
 ```
 
 ### Saving the hashed password
@@ -1920,10 +1917,7 @@ echo md5('It was the best of times, it was the worst of times, it was the age of
 $password = 'letmein';
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 // $2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK
-INSERT INTO users
-				(email, password)
-			VALUES
-				('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
+INSERT INTO users (email, password) VALUES ('oli@oli.com', '$2y$10$vM29l9nq7wS1V9r7hrWdYOCRxTd8tuNMkwf0ZQE63j3sKfel7GucK');
 ```
 
 ### Checking passwords
@@ -1948,6 +1942,7 @@ $password = $\_POST['password']; // = letmein
 ### Why is that useful? What if we get hacked?
 
 Username: oli@oli.com
+
 Password: 0d107d09f5bbe40cade3de5c71e9e9b7
 
 #### Try to log in with these details
@@ -1967,16 +1962,16 @@ echo password_hash($password, PASSWORD_DEFAULT);
 
 ### Rainbow tables
 
-    a	 →	0cc175b9c0f1b6a831c399e269772661
-    b	 →	92eb5ffee6ae2fec3ad71c777531578f
-    c	 →	4a8a08f09d37b73795649038408b5f33
-    d	 →	8277e0910d750195b448797616e091ad
+    a	→	0cc175b9c0f1b6a831c399e269772661
+    b	→	92eb5ffee6ae2fec3ad71c777531578f
+    c	→	4a8a08f09d37b73795649038408b5f33
+    d	→	8277e0910d750195b448797616e091ad
     aa	→	4124bc0a9335c27f086f24ba207a4912
     ab	→	187ef4436122d1cc2f40dc2b92f0eba0
     ac	→	e2075474294983e013ee4dd2201c7a73
     ad	→	523af537946b79c4f8369ed39ba78605
 
-    4124bc0a9335c27f086f24ba207a4912	→	aa
+    4124bc0a9335c27f086f24ba207a4912   →  aa
 
 1-10 characters (a-z, 0-9) = 316 GB!!!!
 
