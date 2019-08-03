@@ -71,7 +71,7 @@ PHP is a **server-side**<sup>1</sup>, **dynamic scripting**<sup>2</sup> language
 
 ```html
 <body onload="startTime()">
-	<p>It's <span id="time">time goes here</span></p>
+    <p>It's <span id="time">time goes here</span></p>
 </body>
 ```
 
@@ -462,16 +462,16 @@ The server may not pass errors to the user, so you'll need to access the server 
 ```php //
 <?php
 if (true) {
-	// do this
+    // do this
 }
 
 if (false) {
-	// not this!
+    // not this!
 }
 
 // Important: Remember your indentation!
 if ($today == 'Monday') {
-	echo 'I hate Mondays!';
+  echo 'I hate Mondays!';
 }
 ```
 
@@ -479,16 +479,16 @@ if ($today == 'Monday') {
 
 ```php //
 <?php
-if (false) {
-	// not this!
+if (false) { 
+  // not this!
 } else {
-	// yes! this!
+  // yes! this!
 }
 
 if (3 == 4) {
-	echo 'maths is broken!';
+    echo 'maths is broken!';
 } else {
-	echo 'everything is fine';
+    echo 'everything is fine';
 }
 ```
 
@@ -497,11 +497,11 @@ if (3 == 4) {
 ```php //
 <?php
 if (false) {
-	// not this!
+    // not this!
 } elseif (false) {
-	// not this!
+    // not this!
 } else {
-	// yes! this!
+    // yes! this!
 }
 ```
 
