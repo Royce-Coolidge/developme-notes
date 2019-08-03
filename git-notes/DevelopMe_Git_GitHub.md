@@ -4,7 +4,7 @@
 
 ## Git setup
 
-1.  Check that you have Git installed:
+1.  Check that you have Git installed:
 
 ```bash
 $ git --version
@@ -15,7 +15,7 @@ $ git --version
 4.  Check you have SSH keys setup for **passwordless ease**:
 
 ```bash
-$ ssh git@github.com
+$ ssh git@github.com
 "Hi [username]! You've successfully authenticated, but GitHub does not provide shell access."
 ```
 
@@ -24,10 +24,10 @@ $ ssh git@github.com
 1.  Create an SSH key pair (unless you have already):
 
 ```bash
-$ ssh-keygen -t rsa -b 4096 -C "email@domain.com"
+$ ssh-keygen -t rsa -b 4096 -C "email@domain.com"
 ```
 
-2.  To output your public key:
+2.  To output your public key:
 
 ```bash
 $ cat ~/.ssh/id_rsa.pub
@@ -35,7 +35,7 @@ $ cat ~/.ssh/id_rsa.pub
 
 3.  Then add key to your GitHub account in <https://github.com/settings/ssh>
 
-4.  Test your key with:
+4.  Test your key with:
 
 ```bash
 $ ssh git@github.com
@@ -156,7 +156,7 @@ Reduces requests over network, increases speed and efficiency, allows working of
 -   Everything is check-summed before storage
 -   Snapshots are referred to by that checksum
 -   Impossible to change the contents of any file or directory without Git knowing about it
--   Checksumming is SHA-1 hash, producing 40-character string, for example:`24b9da6552252987aa493b52f8696cd6d3b00373`
+-   Checksumming is SHA-1 hash, producing 40-character string, for example:`24b9da6552252987aa493b52f8696cd6d3b00373`
 
 ### Git only _adds_ data, it (almost) never _removes_ anything
 
@@ -170,27 +170,27 @@ Reduces requests over network, increases speed and efficiency, allows working of
 
 ## Git Terminology
 
-#### repository / repoproject
+#### repository / repo
 
-files and a versioning database, in our example this is hosted on GitHub, but can be hosted on any Git server or your local machine
+Project files and a versioning database, in our example this is hosted on GitHub, but can be hosted on any Git server or your local machine
 
-#### fetch
+#### fetch
 
 fetching file versions and information from central repository server, e.g. GitHub
 
-#### checkout
+#### checkout
 
 switch your project directory to a certain version of the project, replaces version managed files with the versions from this point in time
 
-#### commit
+#### commit
 
 create a point in time version of the current state of the project files
 
 #### push
 
-push your snapshots (work), to the central project repository, to allow other people to pull and checkout your changes
+push your snapshots (work), to the central project repository, to allow other people to pull and checkout your changes
 
-#### pull
+#### pull
 
 pulling down from the central project repository and updating the branch you are working on
 
@@ -321,7 +321,7 @@ initialize (start) git handling in the current directory
 
 `git remote add origin {repository URL}`
 
-add the remote repo location (GitHub)should be SSH version, starting git@github.com...
+add the remote repo location (GitHub) should be SSH version, starting git@github.com...
 
 `git fetch`
 
@@ -351,7 +351,7 @@ creates a point-in-time snapshot of all files that have been added to staging, w
 
 see what state your files are in
 
-`git rev-parse HEAD`
+`git rev-parse HEAD`
 
 `git reflog`
 
@@ -547,7 +547,7 @@ When doing git pull leads to an automatic merge you sometimes get stuck in Vim e
 $ :q [Enter]
 ```
 
-Git creates a new snapshot after the files have been merged, and this is Git's way of giving you the chance of setting a commit message:
+Git creates a new snapshot after the files have been merged, and this is Git's way of giving you the chance of setting a commit message:
 
 ```bash
 $ 'Merge branch 'master' of...'
@@ -596,11 +596,11 @@ Additional resources:
 $ git mv {file} {directory}
 # delete file and stage deletion
 $ git rm {file}
-# Remove file from tracking, but retain the file
+# Remove file from tracking, but retain the file
 $ git rm --cached README
 ```
 
-**Add to .gitignore file** - Ensure file is not added back into tracking in future
+**Add to .gitignore file** - Ensure file is not added back into tracking in future
 
 * * *
 
@@ -839,7 +839,7 @@ Create pull request for your branch
 
 ![](images/watch-pr.png)
 
-2.  Update your notification settings at [https://github.com/settings/notifications](https://github.com/settings/notifications)
+2.  Update your notification settings at [https://github.com/settings/notifications](https://github.com/settings/notifications)
 
 * * *
 
