@@ -471,7 +471,7 @@ if (false) {
 
 // Important: Remember your indentation!
 if ($today == 'Monday') {
-  echo 'I hate Mondays!';
+    echo 'I hate Mondays!';
 }
 ```
 
