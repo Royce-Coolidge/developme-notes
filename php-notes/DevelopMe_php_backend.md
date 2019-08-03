@@ -523,11 +523,11 @@ if (false) {
 ```php //
 <?php
 if ((true) and (false)) {
-	// not this!
+    // not this!
 }
 
 if ((true) or (false)) {
-	// do this
+    // do this
 }
 ```
 
@@ -536,11 +536,11 @@ if ((true) or (false)) {
 ```php //
 <?php
 if ((true) && (false)) {
-	// not this!
+    // not this!
 }
 
 if ((true) || (false)) {
-	// do this
+    // do this
 }
 ```
 
@@ -549,7 +549,7 @@ if ((true) || (false)) {
 ```php //
 <?php
 if (($today == 'Friday') && ($hour > 17)) {
-	echo 'Beer time!';
+    echo 'Beer time!';
 }
 ```
 
@@ -564,7 +564,7 @@ Useful: <http://php.net/manual/en/language.operators.comparison.php>
 ```php //
 <?php
 if (3 == '3') {
-	echo 'Threes!';
+    echo 'Threes!';
 }
 ```
 
@@ -573,7 +573,7 @@ if (3 == '3') {
 ```php //
 <?php
 if (3 != 4) {
-	echo 'Maths still works!';
+    echo 'Maths still works!';
 }
 ```
 
@@ -582,7 +582,7 @@ if (3 != 4) {
 ```php //
 <?php
 if (3 === '3') {
-	echo 'Not equivalent! ';
+    echo 'Not equivalent! ';
 }
 ```
 
@@ -591,7 +591,7 @@ if (3 === '3') {
 ```php //
 <?php
 if (3 !== '3') {
-	echo 'Not equivalent! ';
+    echo 'Not equivalent! ';
 }
 ```
 
@@ -600,7 +600,7 @@ if (3 !== '3') {
 ```php //
 <?php
 if (2 &lt; 3) {
-	echo 'Of course 2 is smaller!';
+    echo 'Of course 2 is smaller!';
 }
 ```
 
@@ -609,7 +609,7 @@ if (2 &lt; 3) {
 ```php //
 <?php
 if (4 > 3) {
-	echo 'Of course 4 is bigger!';
+    echo 'Of course 4 is bigger!';
 }
 ```
 
@@ -634,11 +634,11 @@ if (value == $variable) { ...
 <?php
 $number = 4;
 if ($number = 3) {
-	echo 'Threes!';
+    echo 'Threes!';
 }
 vs.
 if (3 = $number) {	// syntax error
-	echo 'Threes!';
+    echo 'Threes!';
 }
 ```
 
@@ -711,7 +711,7 @@ $fruit['red'] = 'raspberry';
 ```php //
 <?php
 foreach($fruit AS $key => $value) {
-	echo $value.'s are '.$key.'<br />';
+    echo $value.'s are '.$key.'<br />';
 }
 ```
 
@@ -720,7 +720,7 @@ foreach($fruit AS $key => $value) {
 ```php //
 <?php
 foreach($fruit AS $colour => $type_of_fruit) {
-	echo $type_of_fruit.'s are '.$colour.'<br />';
+    echo $type_of_fruit.'s are '.$colour.'<br />';
 }
 ```
 
@@ -729,7 +729,7 @@ foreach($fruit AS $colour => $type_of_fruit) {
 ```php //
 <?php
 foreach($fruit AS $type_of_fruit) {
-	echo $type_of_fruit.'<br />';
+    echo $type_of_fruit.'<br />';
 }
 ```
 
@@ -843,7 +843,7 @@ Iterative loops: for
 ```php //
 <?php
 for( $i = 1; $i &lt;= 10; $i++) {
-	echo $i.'<br />';
+    echo $i.'<br />';
 }
 
 // Output
@@ -887,14 +887,14 @@ Create a while loop that only outputs the odd numbers between 0 and 100.
 $day = 5;
 
 switch($day) {
-	case 6:
-		echo 'Saturday';
-		break;
-	case 7:
-echo 'Sunday';
-break;
-default:
-	echo 'Weekday';
+    case 6:
+	echo 'Saturday';
+	break;
+    case 7:
+        echo 'Sunday';
+        break;
+    default:
+        echo 'Weekday';
 }
 ```
 
@@ -903,11 +903,11 @@ default:
 $day = 5;
 
 switch($day) {
-	case 6:
-	case 7:
-echo 'Weekend';
-break;
-default:
+    case 6:
+    case 7:
+        echo 'Weekend';
+        break;
+    default:
 	echo 'Weekday';
 }
 ```
@@ -922,9 +922,8 @@ Create a for loop that goes through the hours of the day, starting at 0:00. Writ
 
 For example:
 
-    "0:00 is dark"  
-    ...  
-
+"0:00 is dark"  
+...  
 "8:00 is light"  
 ...  
 "23:00 is dark"  
@@ -946,7 +945,7 @@ Functions
 ```php //
 <?php
 function format_email($name, $email) {
-	$formatted = $name . ' &lt;' . $email . '>';
+    $formatted = $name . ' &lt;' . $email . '>';
 
     return $formatted;
 
@@ -990,7 +989,7 @@ Oli Ward <mailto:oli@developme.training>
 
 2.  Format and return in form '@oliward' (lowercase)
 
-Hint: see PHP's built-in `strtolower()` function and `str_replace()`
+    Hint: see PHP's built-in `strtolower()` function and `str_replace()`
 
 ### Formatting Twitter handle (Advanced)
 
@@ -1048,8 +1047,8 @@ Also account for user inputting:
 
 ```html
 <form action="form-handler.php">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+    <input type="text" name="email" />
+    <input type="submit" value="Send" />
 </form>
 ```
 
@@ -1084,8 +1083,8 @@ Two most common methods for a request-response between a client and server are:
 
 ```html
 <form action="form-handler.php" method="post">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+    <input type="text" name="email" />
+    <input type="submit" value="Send" />
 </form>
 ```
 
@@ -1113,8 +1112,8 @@ echo $_POST['email'];
 
 ```html
 <form action="form-handler.php" method="get">
-	<input type="text" name="email" />
-	<input type="submit" value="Send" />
+    <input type="text" name="email" />
+    <input type="submit" value="Send" />
 </form>
 ```
 
@@ -1162,10 +1161,10 @@ echo $_POST['email'];
 
 ```php //
 <?php
-	// work out answer here
+    // work out answer here
 ?>
 <form>
-	[X] + [Y] = output answer here
+    [X] + [Y] = output answer here
 </form>
 ```
 
@@ -1585,14 +1584,14 @@ $result = mysqli_query($db_connection, $query);
 ```php //
 <?php
 if ($result) {
-	// query ran okay
-	if (mysqli_affected_rows($db_connection) == 1) {
-		// and we changed 1 or more rows of data
-	} else {
-		// Uh oh, something went wrong
-	}
+    // query ran okay
+    if (mysqli_affected_rows($db_connection) == 1) {
+	// and we changed 1 or more rows of data
+    } else {
+	// Uh oh, something went wrong
+    }
 } else {
-	// Uh oh, query didn't run! A problem with the query
+    // Uh oh, query didn't run! A problem with the query
 }
 ```
 
@@ -1601,7 +1600,7 @@ if ($result) {
 ```php //
 <?php
 if (mysqli_affected_rows($db_connection) > 0){
-	echo 'New record ID is '.mysqli_insert_id($db_connection);
+    echo 'New record ID is '.mysqli_insert_id($db_connection);
 }
 ```
 
@@ -1649,9 +1648,9 @@ object(mysqli_result)#2 (5) {
 ```php //
 <?php
 if (mysqli_num_rows($result) > 0){
-	while($row = mysqli_fetch_assoc($result)){
-		var_dump($row);
-	}
+    while($row = mysqli_fetch_assoc($result)){
+	var_dump($row);
+    }
 }
 ```
 
@@ -1686,10 +1685,10 @@ array(4) {
 ```php //
 <?php
 if (mysqli_num_rows($result) > 0){
-	while($row = mysqli_fetch_assoc($result)){
-		echo $row['fullname'].' lives in '.$row['location'];
-		echo '<br />';
-	}
+    while($row = mysqli_fetch_assoc($result)){
+	echo $row['fullname'].' lives in '.$row['location'];
+	echo '<br />';
+    }
 }
 ```
 
@@ -1777,14 +1776,15 @@ To see your email inbox visit <http://192.168.33.10:8025> or <http://scotchbox:8
 // set initial variables
 
 if (form was submitted) {
-	// check user input
+    // check user input
 
-	if (user input okay) {
-		// do database stuff
-		if (database updated) {
-			send email
-		}
+    if (user input okay) {
+	// do database stuff
+	
+        if (database updated) {
+	    send email
 	}
+    }
 }
 if (success) { ?>
 	Well done!
@@ -1828,9 +1828,9 @@ if ($inputted_password == $password_from_database){
 $_SESSION['logged_in'] = 'YES';
 }
 if (isset($_SESSION['logged_in'])){
-	if ('YES' == $_SESSION['logged_in']){
-		echo 'Welcome to your account!';
-	}
+    if ('YES' == $_SESSION['logged_in']){
+        echo 'Welcome to your account!';
+    }
 }
 ```
 
@@ -1843,7 +1843,7 @@ setcookie ( $name, $value, $expire);
 setcookie ( 'logged_in', 'YES', time()+3600);
 
 if ('YES' == $_COOKIE['logged_in']){
-	echo 'Welcome to your account!';
+    echo 'Welcome to your account!';
 }
 ```
 
