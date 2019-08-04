@@ -6,7 +6,7 @@
 -   ↑ = ALWAYS, even if you copied it from elsewhere
 -   File and folder names are consistent (avoiding spaces)
 -   Functions, variables, classes are consistent in style
--   `CamelCase` `kebab-case` `snake_case`
+-   `camelCase` `kebab-case` `snake_case`
 
 #### Developing your debugging process
 
