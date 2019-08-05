@@ -2,15 +2,15 @@
 
 #### We'll start to be strict on:
 
--   Code is correctly indented and tidy
+-   Code is correctly indented and tidy.
 -   ↑ = ALWAYS, even if you copied it from elsewhere
 -   File and folder names are consistent (avoiding spaces)
 -   Functions, variables, classes are consistent in style
--   `camelCase` `kebab-case` `snake_case`
+-   `camelCase` -javascript `kebab-case` -php `snake_case` 
 
 #### Developing your debugging process
 
--   Testing often (change & test, change & test)
+-   Testing often (change & test, change & test) - develop your own approach Rowley!
 -   Sense check what you are doing
 -   Writing checks in your code
 -   Check spelling and consistency (copy and paste is your friend)
@@ -33,6 +33,8 @@ Individually, on local machine
 ### New Tools
 
 LAMP, Vagrant, MySQL
+
+
 
 ### Project
 
